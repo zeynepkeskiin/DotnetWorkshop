@@ -1,0 +1,135 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "DotNetWorkshop.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DotNetWorkshop.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DotNetWorkshop.Core.dll": {}
+        }
+      },
+      "DotNetWorkshop.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DotNetWorkshop.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DotNetWorkshop.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DotNetWorkshop.Repository.dll": {}
+        }
+      },
+      "DotNetWorkshop.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DotNetWorkshop.Repository": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DotNetWorkshop.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DotNetWorkshop.Service.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DotNetWorkshop.Core/1.0.0": {
+      "type": "project",
+      "path": "../DotNetWorkshop.Core/DotNetWorkshop.Core.csproj",
+      "msbuildProject": "../DotNetWorkshop.Core/DotNetWorkshop.Core.csproj"
+    },
+    "DotNetWorkshop.Repository/1.0.0": {
+      "type": "project",
+      "path": "../DotNetWorkshop.Repository/DotNetWorkshop.Repository.csproj",
+      "msbuildProject": "../DotNetWorkshop.Repository/DotNetWorkshop.Repository.csproj"
+    },
+    "DotNetWorkshop.Service/1.0.0": {
+      "type": "project",
+      "path": "../DotNetWorkshop.Service/DotNetWorkshop.Service.csproj",
+      "msbuildProject": "../DotNetWorkshop.Service/DotNetWorkshop.Service.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "DotNetWorkshop.Service >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Zeynep\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Zeynep\\Source\\Repos\\DotNetWorkshop\\DotNetWorkshop.API\\DotNetWorkshop.API.csproj",
+      "projectName": "DotNetWorkshop.API",
+      "projectPath": "C:\\Users\\Zeynep\\Source\\Repos\\DotNetWorkshop\\DotNetWorkshop.API\\DotNetWorkshop.API.csproj",
+      "packagesPath": "C:\\Users\\Zeynep\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Zeynep\\Source\\Repos\\DotNetWorkshop\\DotNetWorkshop.API\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Zeynep\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\Zeynep\\Source\\Repos\\DotNetWorkshop\\DotNetWorkshop.Service\\DotNetWorkshop.Service.csproj": {
+              "projectPath": "C:\\Users\\Zeynep\\Source\\Repos\\DotNetWorkshop\\DotNetWorkshop.Service\\DotNetWorkshop.Service.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
